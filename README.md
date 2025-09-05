@@ -1,14 +1,19 @@
-# AfterMatters
+# AfterMatters - MVP Clickable UI Prototype
 
 > Canada's first comprehensive digital platform for end-of-life planning and post-death administration
 
-AfterMatters combines AI-driven personalization with province-specific legal compliance to guide Canadian families through estate settlement processes with compassion and intelligence.
+This MVP prototype demonstrates AfterMatters' core functionality and trauma-informed design approach, suitable for client presentations and stakeholder demonstrations.
 
-## Project Status
+## ✨ MVP Prototype Features
 
-🚧 **Currently in Development - Phase 0: UX Foundation & Design System**
+This clickable prototype showcases:
 
-This project is in the early design and specification phase. We are currently establishing trauma-informed design principles, user personas, and the complete design system before technical development begins.
+- **Trauma-Informed Design**: Interface designed for users experiencing grief with progressive disclosure and emotional intelligence
+- **Persona-Based Experience**: Tailored workflows for reactive (recently bereaved), proactive (planning ahead), and professional helper users
+- **Smart Intake Wizard**: Multi-step questionnaire with conditional logic and gentle validation
+- **Task Management**: Progress tracking with emotional state awareness
+- **Responsive Design**: Mobile-first approach with accessibility compliance (WCAG 2.2 AA)
+- **Province-Specific Content**: Supports Canadian provincial legal requirements
 
 ## Overview
 
@@ -39,18 +44,93 @@ Frontend (React/PWA) → API Gateway → Backend (Node.js/Express) → PostgreSQ
 - **Security**: AES-256 encryption, JWT authentication
 - **Development**: Vite, ESLint, Prettier, Jest
 
-## Development Setup
+## 🚀 Getting Started
 
-**Note**: Full development environment setup will be available after Phase 0 completion.
+### Prerequisites
 
-Currently available scripts:
+- Node.js 16+ and npm/yarn
+- Modern web browser
+
+### Installation
+
+1. Install dependencies:
+
 ```bash
-npm run lint      # Code linting
-npm run format    # Code formatting  
-npm run typecheck # TypeScript validation
-npm run test      # Run tests
-npm run build     # Build project
+npm install
 ```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+3. Open your browser to `http://localhost:3000`
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm run typecheck` - Run TypeScript type checking
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable React components
+│   ├── ui/             # shadcn/ui base components
+│   ├── forms/          # Form-specific components
+│   └── layout/         # Layout components
+├── pages/              # Page components
+├── data/               # Mock data and personas
+├── lib/                # Utilities and helpers
+├── styles/             # CSS and design tokens
+└── types/              # TypeScript type definitions
+```
+
+## 🎨 Design System Features
+
+### Trauma-Informed Design Tokens
+
+The prototype implements a comprehensive design system focused on emotional states:
+
+- **Crisis Mode**: Larger touch targets, simplified interfaces, supportive messaging
+- **Stable Mode**: Standard interface optimized for clarity and efficiency
+- **Planning Mode**: Future-focused language with preparatory guidance
+
+### Core Pages
+
+1. **Landing Page** (`/`) - Persona selection with empathetic messaging
+2. **Dashboard** (`/dashboard`) - Progress tracking and quick actions
+3. **Intake Wizard** (`/intake`) - Multi-step questionnaire with auto-save
+4. **Tasks** (`/tasks`) - Task management with completion tracking
+
+### Custom Color Palette
+
+- Primary colors: `#4A90A4` (primary blue), `#7BA05B` (secondary green)
+- Emotional state colors: gentle success, supportive error, information blue
+- Typography scales for different emotional states
+- Touch-friendly spacing and sizing
+
+## 🧠 Emotional State Management
+
+The prototype adapts based on user emotional state:
+
+- **Crisis**: Larger text, more padding, supportive messaging, simplified interactions
+- **Stable**: Balanced interface with standard sizing and clear information hierarchy
+- **Planning**: Future-focused language with comprehensive feature access
+
+## ♿ Accessibility Features
+
+- WCAG 2.2 AA compliance
+- Keyboard navigation support
+- Screen reader optimized
+- High contrast color ratios
+- Touch-friendly minimum sizes (44px+)
+- Gentle animations with respect for motion preferences
 
 ## Development Phases
 
@@ -63,18 +143,21 @@ npm run build     # Build project
 ## Key Features
 
 ### Smart Intake Engine
+
 - 40+ questions across 15 categories
 - Progressive disclosure (1-3 questions per step)
 - Province-specific conditional logic
 - Save/resume functionality
 
 ### AI-Powered Checklist Builder
+
 - Personalized task generation
 - 14 main categories with sub-tasks
 - Province-specific legal compliance
 - PDF export and email sharing
 
 ### Secure Document Vault
+
 - AES-256 encrypted storage
 - Role-based access control
 - Time-locked document release
@@ -83,48 +166,67 @@ npm run build     # Build project
 ## Target Users
 
 ### Primary Personas
+
 - **Proactive Planners**: Ages 50-75, preparing estate plans
-- **Reactive Users**: Ages 30-60, recently bereaved managing affairs  
+- **Reactive Users**: Ages 30-60, recently bereaved managing affairs
 - **Professional Users**: Lawyers, financial advisors, funeral directors
 
 ### Use Cases
+
 - Estate planning and document organization
 - Post-death notification to institutions
 - Probate and legal process guidance
 - Professional client support tools
 
-## Contributing
+## 🛠️ Tech Stack
 
-This project is currently in the specification and design phase. Development contributions will be welcomed once the technical implementation begins in Phase 1.
+- **React 18** with TypeScript
+- **shadcn/ui** components with Radix UI primitives
+- **Tailwind CSS** with custom trauma-informed design tokens
+- **Vite** for fast development and optimized builds
+- **Lucide React** for accessible icons
 
-### Code Quality
-- Comprehensive TypeScript coverage
-- Trauma-informed UX principles
-- WCAG 2.1 AA accessibility compliance
-- Province-specific legal accuracy
+## 📝 Development Notes
 
-## Security & Compliance
+- All components are built with TypeScript for type safety
+- shadcn/ui components are customized for trauma-informed interactions
+- Mock data simulates real backend responses
+- Responsive design tested across all device sizes
+- Progressive disclosure patterns reduce cognitive load
 
-- Bank-level encryption (AES-256)
+## 🎯 Next Steps
+
+This MVP prototype is designed for:
+
+1. **Client presentations** and stakeholder demonstrations
+2. **User testing** and feedback collection
+3. **Foundation** for full development implementation
+4. **Design system documentation** and standardization
+
+## 📋 Development Phases
+
+- **Phase 0** (Completed): MVP UI Prototype & Design System
+- **Phase 1**: Smart Intake Engine + Basic Checklist Builder
+- **Phase 2**: Document Vault + Professional Integration APIs
+- **Phase 3**: Advanced AI features + Government API integrations
+- **Phase 4**: Launch optimization + monitoring
+
+## 🔐 Security & Compliance
+
+- Bank-level encryption (AES-256) for production
 - PIPEDA compliance for Canadian privacy laws
-- Multi-factor authentication
+- Multi-factor authentication capabilities
 - Audit logging for all document access
 - Canadian data residency requirements
 
-## License
+## 📄 License
 
-[License details to be determined]
-
-## Support
-
-For questions about this project:
-- Technical documentation: See project specification files
-- Business inquiries: [Contact information to be added]
+This project is private and proprietary to AfterMatters.
 
 ---
 
-**Status**: Phase 0 - UX Foundation & Design System  
-**Next Milestone**: Complete trauma-informed design system and user personas  
-**Estimated Phase 1 Start**: After UX foundation completion
+**🏆 MVP Status**: Complete and ready for client presentations  
+**🚀 Next Milestone**: Phase 1 technical implementation  
+**💡 Purpose**: Demonstrate trauma-informed design approach and core functionality
 
-*Built with ❤️ for Canadian families navigating life's most challenging administrative tasks*
+_Built with ❤️ for Canadian families navigating life's most challenging administrative tasks_

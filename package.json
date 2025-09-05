@@ -2,15 +2,59 @@
   "name": "after-matters",
   "version": "0.1.0",
   "description": "Canada's first comprehensive digital platform for end-of-life planning and post-death administration",
+  "type": "module",
   "scripts": {
-    "lint": "echo '🔍 Linting...' && exit 0",
-    "format": "echo '🎨 Formatting...' && exit 0",
-    "typecheck": "echo '📝 Type checking...' && exit 0",
-    "test": "echo '🧪 Testing...' && exit 0",
-    "test:a11y": "echo '♿ Accessibility testing...' && exit 0",
-    "build": "echo '🔨 Building...' && exit 0"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:a11y": "jest --testPathPattern=a11y"
+  },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-progress": "^1.1.7",
+    "@radix-ui/react-radio-group": "^1.3.8",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "^1.3.8"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
-  }
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0",
+    "vitest": "^1.3.0"
+  },
+  "keywords": [
+    "estate-planning",
+    "estate-settlement",
+    "canada",
+    "grief-support",
+    "trauma-informed-design",
+    "accessibility",
+    "legal-guidance"
+  ],
+  "author": "AfterMatters Team",
+  "license": "UNLICENSED",
+  "private": true
 }

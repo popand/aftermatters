@@ -1,0 +1,209 @@
+/* AfterMatters Design System - Modern Trauma-Informed Color Palette & Tokens */
+
+:root {
+  /* Modern OKLCH Color System - Superior color representation with emotional intelligence */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+
+  /* Legacy color mappings for compatibility */
+  --color-primary-blue: oklch(0.6 0.2 240); /* Modern sky blue */
+  --color-secondary-teal: oklch(0.65 0.15 180); /* Modern teal */
+  --color-accent-purple: oklch(0.6 0.2 300); /* Modern purple accent */
+  --color-neutral-warm: oklch(var(--background));
+  --color-neutral-gray: oklch(var(--muted));
+  --color-text-dark: oklch(var(--foreground));
+  --color-text-medium: oklch(0.45 0 0);
+  --color-text-light: oklch(var(--muted-foreground));
+
+  /* Modern Emotional State Colors in OKLCH */
+  --color-gentle-success: oklch(0.7 0.15 152);
+  --color-careful-warning: oklch(0.75 0.15 85);
+  --color-supportive-error: oklch(0.65 0.2 25);
+  --color-information-blue: oklch(0.6 0.2 250);
+
+  /* Mapped OKLCH to CSS variables for compatibility */
+  --color-primary: oklch(var(--primary));
+  --color-primary-foreground: oklch(var(--primary-foreground));
+  --color-secondary: oklch(var(--secondary));
+  --color-secondary-foreground: oklch(var(--secondary-foreground));
+  --color-background: oklch(var(--background));
+  --color-foreground: oklch(var(--foreground));
+  --color-muted: oklch(var(--muted));
+  --color-muted-foreground: oklch(var(--muted-foreground));
+  --color-card: oklch(var(--card));
+  --color-card-foreground: oklch(var(--card-foreground));
+  --color-border: oklch(var(--border));
+  --color-input: oklch(var(--input));
+  --color-ring: oklch(var(--ring));
+
+  /* Trauma-Informed Spacing Scale */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 3rem; /* 48px */
+  --spacing-xxxl: 4rem; /* 64px */
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+
+  /* Modern Font Families */
+  --font-family-primary:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", sans-serif;
+  --font-family-secondary:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-display:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono:
+    "JetBrains Mono", "Fira Code", "Consolas", "Monaco", monospace;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+
+  /* Modern Shadow System */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  /* Touch Target Minimums */
+  --touch-target-min: 44px;
+  --touch-target-crisis: 56px;
+
+  /* Line Heights for Readability */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6; /* For body text - improved for stressed users */
+  --line-height-loose: 1.8;
+
+  /* Transition Timing - Gentle for trauma-informed design */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease;
+}
+
+/* Modern Dark Theme Variables with OKLCH */
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+}
+
+/* Crisis Mode Adjustments - Larger touch targets and simplified colors */
+.emotional-state-crisis {
+  --touch-target-min: var(--touch-target-crisis);
+
+  /* Simplified high contrast colors for crisis mode */
+  --primary: 50 130 150; /* Slightly more intense primary */
+  --secondary: 100 140 70; /* Slightly more intense secondary */
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-slow: 0ms;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  :root {
+    --primary: 0 0 0;
+    --primary-foreground: 255 255 255;
+    --secondary: 64 64 64;
+    --border: 0 0 0;
+    --ring: 0 0 0;
+  }
+}
+
+/* Base Styles */
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Utility Classes for Trauma-Informed Design */
+.touch-friendly {
+  min-height: var(--touch-target-min);
+  min-width: var(--touch-target-min);
+}
+
+.gentle-transition {
+  transition: all var(--transition-normal);
+}
+
+.crisis-spacing > * + * {
+  margin-top: var(--spacing-xl);
+}
+
+.stable-spacing > * + * {
+  margin-top: var(--spacing-lg);
+}
