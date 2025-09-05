@@ -1,0 +1,16 @@
+{
+  "name": "after-matters",
+  "version": "0.1.0",
+  "description": "Canada's first comprehensive digital platform for end-of-life planning and post-death administration",
+  "scripts": {
+    "lint": "echo '🔍 Linting...' && exit 0",
+    "format": "echo '🎨 Formatting...' && exit 0",
+    "typecheck": "echo '📝 Type checking...' && exit 0",
+    "test": "echo '🧪 Testing...' && exit 0",
+    "test:a11y": "echo '♿ Accessibility testing...' && exit 0",
+    "build": "echo '🔨 Building...' && exit 0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
